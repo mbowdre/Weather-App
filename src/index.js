@@ -8,7 +8,7 @@ let days = [
   "Wednesday",
   "Thursday",
   "Friday",
-  "Sunday"
+  "Sunday",
 ];
 let dates = document.querySelector("#date");
 let hours = now.getHours();
@@ -22,8 +22,6 @@ if (minutes < 10) {
 let day = days[now.getDay()];
 
 dates.innerHTML = `${day} ${hours}:${minutes}`;
-
-// Challenge 2
 
 function search(event) {
   event.preventDefault();
